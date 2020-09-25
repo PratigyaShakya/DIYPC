@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.pcbuildersandbox"
+3    package="com.example.finalproject"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -11,7 +11,7 @@
 9-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:5:5-22:19
+11-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:5:5-19:19
 12        android:allowBackup="true"
 12-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,25 +29,20 @@
 20        android:testOnly="true"
 21        android:theme="@style/AppTheme" >
 21-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity
-22-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:9-21:20
-23            android:name="com.example.pcbuildersandbox.MainActivity"
-23-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:13:13-41
-24            android:label="@string/app_name"
-24-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:13-45
-25            android:theme="@style/AppTheme.NoActionBar" >
-25-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:15:13-56
-26            <intent-filter>
-26-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:16:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:17:17-69
-27-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:19:17-77
-29-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:19:27-74
-30            </intent-filter>
-31        </activity>
-32    </application>
-33
-34</manifest>
+22        <activity android:name="com.example.finalproject.MainActivity" >
+22-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:19-47
+23            <intent-filter>
+23-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:17-69
+24-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:16:17-77
+26-->E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

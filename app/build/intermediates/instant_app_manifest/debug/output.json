@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.example.pcbuildersandbox",
+  "applicationId": "com.example.finalproject",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.example.pcbuildersandbox",
+        "packageId": "com.example.finalproject",
         "split": "",
         "minSdkVersion": "30"
       }
