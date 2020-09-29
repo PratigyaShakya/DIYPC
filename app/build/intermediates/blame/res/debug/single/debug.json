@@ -1,5 +1,13 @@
 [
     {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
@@ -20,6 +28,38 @@
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cpu.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\cpu.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_desktopcase.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\desktopcase.png"
+    },
+    {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
@@ -34,10 +74,6 @@
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_psu.png.flat",
@@ -56,16 +92,8 @@
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mobo.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\mobo.png"
-    },
-    {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cpu.png.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\cpu.png"
     },
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gpu.png.flat",
@@ -76,19 +104,11 @@
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\mainicon.png"
     },
     {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ram.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\ram.png"
-    },
-    {
-        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_desktopcase.png.flat",
-        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\desktopcase.png"
     }
 ]
