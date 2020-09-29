@@ -790,8 +790,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cpu
+drawable desktopbuild
+drawable desktopcase
+drawable gpu
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable mainicon
+drawable mobo
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -804,6 +810,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable psu
+drawable ram
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
