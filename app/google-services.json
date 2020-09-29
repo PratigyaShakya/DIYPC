@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "803216249126",
+    "firebase_url": "https://diy-pc.firebaseio.com",
+    "project_id": "diy-pc",
+    "storage_bucket": "diy-pc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803216249126:android:e25e8d76239077138cb1e7",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803216249126-foanmsic9gf7a09pfcoqg69qcms1vphc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5j7mGD1N-bZ8uOf8TFVaRAARgBaqVWwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803216249126-foanmsic9gf7a09pfcoqg69qcms1vphc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
