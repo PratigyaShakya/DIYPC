@@ -1,9 +1,5 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ram.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\ram.png"
-=======
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
@@ -14,29 +10,24 @@
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
->>>>>>> SplashScreen-Shawn
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gpu.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\gpu.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_desktopbuild.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\desktopbuild.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-=======
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
@@ -71,95 +62,52 @@
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
->>>>>>> SplashScreen-Shawn
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cpu.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\cpu.png"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mobo.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\mobo.png"
-=======
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\layout\\activity_home.xml"
     },
     {
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
->>>>>>> SplashScreen-Shawn
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_psu.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\psu.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_psu.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\psu.png"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_desktopbuild.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\desktopbuild.png"
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_desktopcase.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\desktopcase.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-=======
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mobo.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\mobo.png"
     },
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gpu.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\gpu.png"
->>>>>>> SplashScreen-Shawn
     },
     {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mainicon.png.flat",
+        "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\mainicon.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mainicon.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable\\mainicon.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\FinalProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\FinalProject\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-=======
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
@@ -170,6 +118,5 @@
     {
         "merged": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ram.png.flat",
         "source": "E:\\Documents\\UNH Fall 2020\\Android\\Projects\\PCBuilderSandbox\\app\\src\\main\\res\\drawable\\ram.png"
->>>>>>> SplashScreen-Shawn
     }
 ]

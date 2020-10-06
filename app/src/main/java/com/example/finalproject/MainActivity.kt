@@ -3,12 +3,9 @@ package com.example.finalproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< HEAD
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
-=======
 import android.os.Handler
->>>>>>> SplashScreen-Shawn
 
 class MainActivity : AppCompatActivity() {
 
