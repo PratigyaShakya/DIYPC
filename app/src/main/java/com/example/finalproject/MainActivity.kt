@@ -20,3 +20,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+class PCBuild{
+    var cpu = null
+    var mobo = null
+    var ram = null
+    var gpu = null
+    var case = null
+    var psu = null
+    var finished: Boolean = false
+
+    
+
+}
