@@ -25,15 +25,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.finalproject.HomeActivity"
-            android:label="Home" />
-        <activity android:name="com.example.finalproject.MainActivity" >
+        <activity android:name="com.example.finalproject.HomeActivity" >
+            android:label="Home"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.finalproject.MainActivity" >
         </activity>
 
         <service

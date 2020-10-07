@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     class MainActivity : AppCompatActivity() {
 
         private val TAG = javaClass.name
-
         private val db = FirebaseFirestore.getInstance()
 
 
