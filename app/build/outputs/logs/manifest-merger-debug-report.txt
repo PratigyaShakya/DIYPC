@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
 MERGED from [androidx.core:core-ktx:1.3.2] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\85d65752bd1e252d84644462b7fdd165\jetified-core-ktx-1.3.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth-ktx:19.4.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\23f3cdecae999da225ec6218d8c4e0ec\jetified-firebase-auth-ktx-19.4.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:21.7.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\0b8931c57fc48eb3de307c17c8fc4137\jetified-firebase-firestore-ktx-21.7.0\AndroidManifest.xml:2:1-21:12
@@ -57,25 +57,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\shoot\.g
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\ad276426da685a29f1c2e6ec6601aff9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\ed47c12390877365adc55c4dd3e76414\jetified-protolite-well-known-types-17.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\641a06ad13774de2c381997330ffefd1\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:1-21:12
 		INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.firebase:firebase-auth-ktx:19.4.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\23f3cdecae999da225ec6218d8c4e0ec\jetified-firebase-auth-ktx-19.4.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:19.4.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\23f3cdecae999da225ec6218d8c4e0ec\jetified-firebase-auth-ktx-19.4.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:21.7.0] C:\Users\shoot\.gradle\caches\transforms-2\files-2.1\0b8931c57fc48eb3de307c17c8fc4137\jetified-firebase-firestore-ktx-21.7.0\AndroidManifest.xml:11:5-19:19
@@ -137,25 +137,23 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\sh
 	android:theme
 		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.finalproject.HomeActivity
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:9-13:35
-	android:label
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:13:13-33
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:9-17:20
 	android:name
 		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:12:19-47
-activity#com.example.finalproject.MainActivity
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:9-20:20
-	android:name
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:13:13-16:29
 action#android.intent.action.MAIN
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:15:27-74
+activity#com.example.finalproject.MainActivity
+ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:18:9-19:20
+	android:name
+		ADDED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml:18:19-47
 uses-sdk
 INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Documents\UNH Fall 2020\Android\Projects\PCBuilderSandbox\app\src\main\AndroidManifest.xml
