@@ -14,8 +14,11 @@ class HomeActivity : AppCompatActivity() {
         //Splash Code taken from https://www.youtube.com/watch?v=Q0gRqbtFLcw
         supportActionBar?.hide()
 
+        //Transition from Splash screen to Landing Page after 3 seconds.
         Handler().postDelayed({
             val intent = Intent(this@HomeActivity, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }, 3000)
 
     }
