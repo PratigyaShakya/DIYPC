@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-class PCBuild{
+//
+class PCBuild(buildName: String){
+    var name = buildName
     var cpu = null
     var mobo = null
     var ram = null
@@ -29,7 +31,6 @@ class PCBuild{
     var case = null
     var psu = null
     var finished: Boolean = false
-
-    
+    var compatible: Boolean = true
 
 }
