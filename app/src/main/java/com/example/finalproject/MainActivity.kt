@@ -20,3 +20,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+//Master class for derivation to individual builds
+class PCBuild(buildName: String){
+    var name = buildName
+    var cpu = null
+    var mobo = null
+    var ram = null
+    var gpu = null
+    var case = null
+    var psu = null
+    var finished: Boolean = false
+    var compatible: Boolean = true
+
+}

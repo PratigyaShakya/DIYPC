@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Wed Oct 07 00:34:27 EDT 2020
-=======
-#Tue Oct 06 23:44:41 EDT 2020
->>>>>>> postSplash-Pratigya
+#Thu Oct 08 13:51:15 EDT 2020
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
