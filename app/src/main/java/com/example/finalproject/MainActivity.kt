@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 }
 
 //Master class for derivation to individual builds
-//8 October comment to test Build
 class PCBuild(buildName: String){
     var name = buildName
     var cpu = null
