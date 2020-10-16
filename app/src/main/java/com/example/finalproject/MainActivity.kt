@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//Master class for derivation to individual builds
+//Build Folder Re-Delete Fixer
 class PCBuild(buildName: String){
     var name = buildName
     var cpu = null
