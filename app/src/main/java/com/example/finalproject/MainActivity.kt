@@ -8,13 +8,9 @@ import com.google.firebase.ktx.Firebase
 import android.os.Handler
 
 class MainActivity : AppCompatActivity() {
-
-
-
     class MainActivity : AppCompatActivity() {
 
         private val TAG = javaClass.name
-
         private val db = FirebaseFirestore.getInstance()
 
 
@@ -23,4 +19,18 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.activity_main)
         }
     }
+}
+
+//
+class PCBuild(buildName: String){
+    var name = buildName
+    var cpu = null
+    var mobo = null
+    var ram = null
+    var gpu = null
+    var case = null
+    var psu = null
+    var finished: Boolean = false
+    var compatible: Boolean = true
+
 }

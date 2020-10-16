@@ -9,7 +9,7 @@
 
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/splashdemo1">
+    >
 
     <TextView
         android:layout_width="match_parent"
