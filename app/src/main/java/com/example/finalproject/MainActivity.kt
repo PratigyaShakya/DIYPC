@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//Post Old Style List Cutout Test - Shawn 2320 - 15102020
+//
 class PCBuild(buildName: String){
     var name = buildName
     var cpu = null
