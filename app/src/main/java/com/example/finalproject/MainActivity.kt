@@ -8,18 +8,18 @@ import com.google.firebase.ktx.Firebase
 import android.os.Handler
 
 class MainActivity : AppCompatActivity() {
-    class MainActivity : AppCompatActivity() {
 
         private val TAG = javaClass.name
         private val db = FirebaseFirestore.getInstance()
-
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
         }
+
+    
     }
-}
+
 
 //Build Folder Re-Delete Fixer
 class PCBuild(buildName: String){
