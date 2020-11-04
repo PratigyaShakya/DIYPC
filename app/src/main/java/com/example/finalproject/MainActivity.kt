@@ -6,18 +6,34 @@ import android.os.Bundle
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import android.os.Handler
+import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-        private val TAG = javaClass.name
-        private val db = FirebaseFirestore.getInstance()
+    private val TAG = javaClass.name
+    private val db = FirebaseFirestore.getInstance()
 
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        registration_button.setOnClickListener {
+            val email = email_editText_register.text.toString()
+            val password = password_editText_register.text.toString()
+
+            Log.d("MainActivity", "Email is : " + email)
+            Log.d("MainActivity", "Password: $password")
         }
 
-    
+        back_to_registration.setOnClickListener{
+            Log.d("MainActivity", "Trying to show login activity")
+            // Launch the login activity
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+
     }
 
 
