@@ -7,6 +7,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import android.os.Handler
 import android.util.Log
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthException
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +25,14 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("MainActivity", "Email is : " + email)
             Log.d("MainActivity", "Password: $password")
+
+            // Firebase authentication, user email and password
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener{
+                    
+                }
+
+
         }
 
         back_to_registration.setOnClickListener{
