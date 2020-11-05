@@ -7,6 +7,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import android.os.Handler
 import android.util.Log
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,19 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        registration_button.setOnClickListener {
-            val email = email_editText_register.text.toString()
-            val password = password_editText_register.text.toString()
-
-            Log.d("MainActivity", "Email is : " + email)
-            Log.d("MainActivity", "Password: $password")
-
-            // Firebase authentication, user email and password
-            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener{
-                    
-                }
-
+        registration_button.setOnClickListener setOnCLickListener@{
+            registrationFunction()
 
         }
 
@@ -43,8 +33,30 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun registrationFunction(){
+        val email = email_editText_register.text.toString()
+        val password = password_editText_register.text.toString()
 
+        if(email.isEmpty() || password.isEmpty()){
+            Toast.makeText(this, "Please enter your email and password", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        Log.d("MainActivity", "Email is : " + email)
+        Log.d("MainActivity", "Password: $password")
+
+        // Firebase authentication, user email and password
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener{
+                if (!it.isSuccessful) return@addOnCompleteListener
+                Log.d("Main", "Successfully created user with uid: ${it.result?.user?.uid}")
+            }
+            .addOnFailureListener{
+                Log.d("Main", "Failed to create user: ${it.message}")
+                Toast.makeText(this, "Registration failed :  ${it.message}", Toast.LENGTH_SHORT).show()
+            }
     }
+}
 
 
 //Build Folder Re-Delete Fixer
