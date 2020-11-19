@@ -1,11 +1,16 @@
 package com.example.finalproject
 
+import android.app.Activity
+import android.app.Instrumentation
 import android.content.Intent
+import android.graphics.drawable.BitmapDrawable
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import android.os.Handler
+import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -31,6 +36,27 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        select_photo.setOnClickListener {
+            Log.d("Main", "Trying to show photo selector")
+
+            val intent = Intent(Intent.ACTION_PICK)
+            intent.type ="image/*"
+            startActivityForResult(intent, 0)
+        }
+    }
+
+    var selectedPhotoUri: Uri? = null
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode==0 && resultCode == Activity.RESULT_OK&& data!= null){
+            Log.d("RegisterActivity", "Photo was selected")
+            selectedPhotoUri = data.data
+            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
+            val bitmapDrawable = BitmapDrawable(bitmap)
+            select_photo.setBackgroundDrawable(bitmapDrawable)
+        }
     }
 
     private fun registrationFunction(){
@@ -50,15 +76,19 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener{
                 if (!it.isSuccessful) return@addOnCompleteListener
                 Log.d("Main", "Successfully created user with uid: ${it.result?.user?.uid}")
+                uploadImageToFirebaseStorage()
             }
             .addOnFailureListener{
                 Log.d("Main", "Failed to create user: ${it.message}")
                 Toast.makeText(this, "Registration failed :  ${it.message}", Toast.LENGTH_SHORT).show()
             }
     }
+    private fun uploadImageToFirebaseStorage(){
+
+    }
 }
 
-
+/*
 //Build Folder Re-Delete Fixer
 class PCBuild(buildName: String){
     var name = buildName
@@ -71,4 +101,4 @@ class PCBuild(buildName: String){
     var finished: Boolean = false
     var compatible: Boolean = true
 
-}
+}*/
