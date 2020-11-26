@@ -17,15 +17,12 @@ import kotlinx.android.synthetic.main.viewholder.*
 class BuilderActivity: AppCompatActivity() {
 
     private val TAG = javaClass.name
-
     private val db = FirebaseFirestore.getInstance()
-    private var adapter : FirestoreRecyclerAdapter<ProductList, ProductListViewHolder>? = null
+    private lateinit var productListAdapter: ProductListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_builder)
-
-
 
         val query: Query = FirebaseFirestore.getInstance()
             .collection("Parts")
@@ -36,42 +33,21 @@ class BuilderActivity: AppCompatActivity() {
             .setQuery(query, ProductList::class.java)
             .build()
 
-        adapter = object : FirestoreRecyclerAdapter<ProductList, ProductListViewHolder>(options){
-            override fun onBindViewHolder(
-                holder: ProductListViewHolder,
-                position: Int,
-                model: ProductList
-            ) {
-                val resID = resources.getIdentifier(model.logo, "drawable", packageName)
-                holder.logo.setImageResource(resID)
-                holder.name.text = model.name
-            }
-
-            override fun onCreateViewHolder(group: ViewGroup, i: Int): ProductListViewHolder {
-                val view = LayoutInflater.from(group.context)
-                    .inflate(R.layout.viewholder, group, false)
-                return ProductListViewHolder(view)
-            }
-        }
-
-        recyclerView.adapter = adapter
+        productListAdapter = ProductListAdapter(options, resources)
+        recyclerView.adapter = productListAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
-
 
         /*floating_button1.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }*/
     }
-
     override fun onStart(){
         super.onStart()
-        adapter?.startListening()
+        productListAdapter.startListening()
     }
-
     override fun onStop(){
         super.onStop()
-        adapter?.stopListening()
-
+        productListAdapter.stopListening()
     }
 }
