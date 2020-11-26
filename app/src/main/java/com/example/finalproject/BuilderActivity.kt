@@ -42,6 +42,8 @@ class BuilderActivity: AppCompatActivity() {
                 position: Int,
                 model: ProductList
             ) {
+                val resID = resources.getIdentifier(model.logo, "drawable", packageName)
+                holder.logo.setImageResource(resID)
                 holder.name.text = model.name
             }
 
