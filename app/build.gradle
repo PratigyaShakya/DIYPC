@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
 
 
 android {
@@ -35,9 +36,10 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-analytics:18.0.0'
     implementation 'com.google.firebase:firebase-auth-ktx:20.0.1'
-    implementation 'com.google.firebase:firebase-firestore-ktx:22.0.0'
 
+    implementation 'com.android.support:support-annotations:28.0.0'
 
+    //test dependencies
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -48,5 +50,14 @@ dependencies {
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:26.1.0')
     implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx:22.0.0'
+
+    implementation 'com.firebaseui:firebase-ui-storage:6.4.0'
     implementation 'com.firebaseui:firebase-ui-firestore:7.1.0'
-    }
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+}
+
+

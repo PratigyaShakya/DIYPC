@@ -23,18 +23,17 @@ class BuilderActivity: AppCompatActivity() {
             .orderBy("name")
             .limit(50)
 
+       // query.addSnapshotListener
+
         val options: FirestoreRecyclerOptions<ProductList> = FirestoreRecyclerOptions.Builder<ProductList>()
             .setQuery(query, ProductList::class.java)
             .build()
 
-        productListAdapter = ProductListAdapter(options, resources)
+        productListAdapter = ProductListAdapter(options, this)
         recyclerView.adapter = productListAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        /*floating_button1.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }*/
+
     }
     override fun onStart(){
         super.onStart()
