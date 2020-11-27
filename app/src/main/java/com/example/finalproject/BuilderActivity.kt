@@ -1,18 +1,12 @@
 package com.example.finalproject
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
-import java.lang.NullPointerException
-import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_builder.*
-import kotlinx.android.synthetic.main.viewholder.*
 
 class BuilderActivity: AppCompatActivity() {
 
