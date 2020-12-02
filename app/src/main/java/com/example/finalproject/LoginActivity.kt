@@ -33,7 +33,7 @@ class LoginActivity: AppCompatActivity(){
         }
 
         skipButton_Login.setOnClickListener {
-            val intent = Intent(this, BuilderActivity::class.java)
+            val intent = Intent(this, ListPartsBuilder::class.java)
             startActivity(intent)
         }
     }

@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class ProductListViewHolder(view: View) : RecyclerView.ViewHolder(view){
-    var name: TextView = view.findViewById(R.id.textView)
-    var logo: ImageView = view.findViewById(R.id.logo)
+    var name: TextView = view.findViewById(R.id.cpuName)
+    var price: TextView = view.findViewById(R.id.cpuPrice)
+    var cpuLogo: ImageView = view.findViewById(R.id.cpuImage)
+
 }

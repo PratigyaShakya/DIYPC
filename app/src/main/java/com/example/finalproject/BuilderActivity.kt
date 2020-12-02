@@ -19,7 +19,7 @@ class BuilderActivity: AppCompatActivity() {
         setContentView(R.layout.activity_builder)
 
         val query: Query = FirebaseFirestore.getInstance()
-            .collection("Parts")
+            .collection("CPU")
             .orderBy("name")
             .limit(50)
 
