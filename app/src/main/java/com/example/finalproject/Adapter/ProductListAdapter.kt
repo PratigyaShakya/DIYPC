@@ -1,10 +1,13 @@
-package com.example.finalproject
+package com.example.finalproject.Adapter
 
 import android.content.Context
 import android.content.Intent
-import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.example.finalproject.CPUDetailActivity
+import com.example.finalproject.ProductList
+import com.example.finalproject.ProductListViewHolder
+import com.example.finalproject.R
 import com.example.finalproject.glide.GlideApp
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
@@ -22,12 +25,12 @@ class ProductListAdapter(options: FirestoreRecyclerOptions<ProductList>, private
 
     override fun onBindViewHolder(holder: ProductListViewHolder, position: Int, model: ProductList) {
         // Fires when the user clicks the row in recycler view
-       /* holder.itemView.setOnClickListener {
-            val intent = Intent(context, CPUActivity::class.java).apply {
-                putExtra("Anything could go here", model)
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, CPUDetailActivity::class.java).apply {
+                putExtra("CPU Detail", model)
             }
             context.startActivity(intent)
-        }*/
+        }
 
         // binding logo using Glide generated API
         val storageReference= Firebase.storage.getReferenceFromUrl(model.cpuLogo)
@@ -36,6 +39,6 @@ class ProductListAdapter(options: FirestoreRecyclerOptions<ProductList>, private
 
        // binding everything together
         holder.name.text = model.name
-        holder.price.text = model.price
+        holder.price.text = "$${model.price}"
     }
 }

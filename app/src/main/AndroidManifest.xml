@@ -20,6 +20,7 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".BuilderActivity"/>
         <activity android:name=".ListPartsBuilder"/>
+        <activity android:name=".CPUDetailActivity"/>
 
     </application>
 </manifest>

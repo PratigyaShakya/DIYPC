@@ -6,8 +6,8 @@ data class  ProductList(
     val name: String = "",
     val cpuLogo: String="",
     val price: String = "",
-    val boostClock: Double = 0.0,
-    val coreClock: Double = 0.0,
-    val coreCount: Double = 0.0,
-    val tdp:Double = 0.0
+    val boostClock: String = "",
+    val coreClock: String = "",
+    val coreCount: String = "",
+    val tdp:String = ""
     ): Serializable
