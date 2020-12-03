@@ -3,6 +3,7 @@ package com.example.finalproject
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -23,6 +24,7 @@ class LoginActivity: AppCompatActivity(){
                 .addOnCompleteListener{
                     if (!it.isSuccessful) return@addOnCompleteListener
                     Log.d("Main", "Successfully logged in with uid: ${it.result?.user?.uid}")
+                    Toast.makeText(this, "Login Successful.  ${it.result}", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener{
                     Log.d("Main", "Failed to login: ${it.message}")

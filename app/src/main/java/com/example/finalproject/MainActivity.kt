@@ -96,18 +96,3 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
-
-/*
-//Build Folder Re-Delete Fixer
-class PCBuild(buildName: String){
-    var name = buildName
-    var cpu = null
-    var mobo = null
-    var ram = null
-    var gpu = null
-    var case = null
-    var psu = null
-    var finished: Boolean = false
-    var compatible: Boolean = true
-
-}*/
