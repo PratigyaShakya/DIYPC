@@ -1,9 +1,7 @@
 package com.example.finalproject
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.EditText
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.finalproject.Adapter.BufferAdapter
@@ -39,28 +37,21 @@ class BufferActivity: AppCompatActivity() {
         recyclerViewBuffer.adapter = bufferAdapter
         recyclerViewBuffer.layoutManager = LinearLayoutManager(this)
 
+        // Setting selected item on the bar explicitly
+        bottomNavigationBuffer.selectedItemId = R.id.newBuild
 
-    }
-
-    private fun showEditTextDialog() {
-        addButtonBuffer.setOnClickListener {
-            val builder = AlertDialog.Builder(this)
-            val inflater = layoutInflater
-            val dialogLayout = inflater.inflate(R.layout.activity_pop_up_buffer, null)
-            val editText = dialogLayout.findViewById<EditText>(R.id.popUpdialogue)
-
-            with(builder) {
-                setPositiveButton("Ok") { dialog, which ->
-                    // need to setup a recycler view first, then this should create a new document in the given
-                    Log.d("Buffer", "Successfully added pop up ")
+        // Adding behavior to the bottom navigation bar
+        bottomNavigationBuffer.setOnNavigationItemReselectedListener {
+            when(it.itemId) {
+                R.id.newBuild ->{
+                    val intent = Intent(this, ListPartsBuilder::class.java)
+                    startActivity(intent)
+                    true
                 }
-                setNegativeButton("Cancel") { dialog, which ->
-                    Log.d("Buffer", "Successfully added pop up ")
-                }
-                setView(dialogLayout)
-                show()
+                //R.id.copyBuild
             }
         }
+
     }
 
     override fun onStart(){
