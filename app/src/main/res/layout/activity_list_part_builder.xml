@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/cpu_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/cpu" />
+
+    <Button
+        android:id="@+id/tv_cpu"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="50dp"
+        android:text="CPU"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cpu_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ram_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ram"
+        app:layout_constraintEnd_toEndOf="@+id/cpu_logo"
+        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_logo" />
+
+    <Button
+        android:id="@+id/tv_ram"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="3dp"
+        android:text="Ram"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cpu" />
+
+
+    <ImageView
+        android:id="@+id/desktopCase_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="@+id/cpu_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_logo"
+        android:src="@drawable/desktopcase" />
+
+    <Button
+        android:id="@+id/tv_desktopCase"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="116dp"
+        android:text="Desktop Case"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cpu" />
+
+    <ImageView
+        android:id="@+id/psu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="232dp"
+        app:layout_constraintEnd_toEndOf="@+id/cpu_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_logo"
+        android:src="@drawable/psu" />
+
+    <Button
+        android:id="@+id/tv_psu"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="232dp"
+        android:text="PSU"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cpu" />
+
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
