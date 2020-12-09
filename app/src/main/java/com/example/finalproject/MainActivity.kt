@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     private val TAG = javaClass.name
     private val db = FirebaseFirestore.getInstance()
+    val email = null
+    val password = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -91,8 +93,11 @@ class MainActivity : AppCompatActivity() {
         val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
         ref.putFile(selectedPhotoUri!!)
             .addOnSuccessListener {
-                Log.d("registerActivity", "Successfully uploaded image")
-            }
+                Log.d("registerActivity", "Successfully uploaded image${it.metadata?.path}")
+                ref.downloadUrl.addOnSuccessListener {
+                    Log.d("Registration URL", "file location: $it")
 
+                }
+            }
     }
 }
