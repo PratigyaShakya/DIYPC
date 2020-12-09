@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        
+
 // On click action that will let the user provide user name, email and password to register
         registerButton.setOnClickListener {
             val userName: String = username_editText_register.text.toString()
@@ -79,6 +79,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    // Adding user data to FireStore
     private fun addToUserCollection() {
         val user = mutableMapOf(
             "userName" to userName.text.toString(),
