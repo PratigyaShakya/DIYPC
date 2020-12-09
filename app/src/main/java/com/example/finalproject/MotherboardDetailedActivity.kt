@@ -17,7 +17,7 @@ class MotherboardDetailedActivity  : AppCompatActivity() {
         // Binding other fields
         val motherboardDetail = intent.getSerializableExtra("Motherboard Detail") as? MotherboardList ?: return
         motherboardNameDetailed.text = motherboardDetail.name
-        motherboardPriceDetailed.text = motherboardDetail.price.toString()
+        motherboardPriceDetailed.text = "$${motherboardDetail.price.toString()}"
         motherboardformFactorDetailed.text = motherboardDetail.formfactor
         motherboardManufacturerDetailed.text = motherboardDetail.manufacturer
         motherboardRamChannelsDetailed.text = motherboardDetail.ramchannels.toString()
