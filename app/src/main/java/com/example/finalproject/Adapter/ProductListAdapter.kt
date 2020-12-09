@@ -19,7 +19,7 @@ class ProductListAdapter(options: FirestoreRecyclerOptions<ProductList>, private
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductListViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.cpu_list_viewholder, parent, false)
+            .inflate(R.layout.parts_list_viewholder, parent, false)
         return ProductListViewHolder(view)
     }
 

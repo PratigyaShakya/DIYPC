@@ -16,20 +16,18 @@ class MotherboardAdapter (options: FirestoreRecyclerOptions<MotherboardList>, pr
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductListViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.cpu_list_viewholder, parent, false)
+            .inflate(R.layout.parts_list_viewholder, parent, false)
         return ProductListViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ProductListViewHolder, position: Int, model: MotherboardList) {
         // Fires when the user clicks the row in recycler view
-        /*
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, CPUDetailActivity::class.java).apply {
-                putExtra("CPU Detail", model)
+            val intent = Intent(context, MotherboardDetailedActivity::class.java).apply {
+                putExtra("Motherboard Detail", model)
             }
             context.startActivity(intent)
         }
-         */
 
         // binding logo using Glide generated API
         val storageReference= Firebase.storage.getReferenceFromUrl(model.image)

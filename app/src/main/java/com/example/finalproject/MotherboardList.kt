@@ -6,8 +6,8 @@ data class MotherboardList(
     val name: String = "",
     val price: Double = 0.0,
     val manufacturer: String = "",
-    val formFactor: String = "",
-    val ramChannels: Double = 0.0,
-    val ramType: String = "",
-    val socketType: String = ""
+    val formfactor: String = "",
+    val ramchannels: Double = 0.0,
+    val ramtype: String = "",
+    val sockettype: String = ""
 ): Serializable

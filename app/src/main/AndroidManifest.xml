@@ -23,6 +23,7 @@
         <activity android:name=".CPUDetailActivity"/>
         <activity android:name=".BufferActivity"/>
         <activity android:name=".MotherboardActivity"/>
+        <activity android:name=".MotherboardDetailedActivity"/>
 
     </application>
 </manifest>
