@@ -24,7 +24,12 @@ class LoginActivity: AppCompatActivity(){
                 .addOnCompleteListener{
                     if (!it.isSuccessful) return@addOnCompleteListener
                     Log.d("Main", "Successfully logged in with uid: ${it.result?.user?.uid}")
-                    Toast.makeText(this, "Login Successful.  ${it.result}", Toast.LENGTH_SHORT).show()
+
+                    // Creating an intent to get to next page in case of login successful
+                    loginButton.setOnClickListener{
+                        val intent = Intent(this, BufferActivity::class.java)
+                        startActivity(intent)
+                    }
                 }
                 .addOnFailureListener{
                     Log.d("Main", "Failed to login: ${it.message}")
