@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     private val TAG = javaClass.name
     private val db = FirebaseFirestore.getInstance()
+    val email = null
+    val password = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
