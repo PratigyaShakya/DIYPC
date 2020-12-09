@@ -119,14 +119,13 @@
         android:id="@+id/buttonMotherboard"
         android:layout_width="279dp"
         android:layout_height="101dp"
+        android:layout_marginBottom="140dp"
         android:text="Motherboard"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_cpu"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cpu"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpu" />
 
 
     />

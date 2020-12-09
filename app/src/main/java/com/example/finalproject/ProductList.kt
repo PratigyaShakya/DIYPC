@@ -4,8 +4,8 @@ import java.io.Serializable
 
 data class  ProductList(
     val name: String = "",
-    val cpuLogo: String="",
-    val price: String = "",
+    val image: String="",
+    val price: Double = 0.0,
     val boostClock: String = "",
     val coreClock: String = "",
     val coreCount: String = "",

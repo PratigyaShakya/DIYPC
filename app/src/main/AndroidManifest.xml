@@ -22,6 +22,7 @@
         <activity android:name=".ListPartsBuilder"/>
         <activity android:name=".CPUDetailActivity"/>
         <activity android:name=".BufferActivity"/>
+        <activity android:name=".MotherboardActivity"/>
 
     </application>
 </manifest>
