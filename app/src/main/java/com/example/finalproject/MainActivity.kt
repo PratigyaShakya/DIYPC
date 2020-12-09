@@ -91,8 +91,11 @@ class MainActivity : AppCompatActivity() {
         val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
         ref.putFile(selectedPhotoUri!!)
             .addOnSuccessListener {
-                Log.d("registerActivity", "Successfully uploaded image")
-            }
+                Log.d("registerActivity", "Successfully uploaded image${it.metadata?.path}")
+                ref.downloadUrl.addOnSuccessListener {
+                    Log.d("Registration URL", "file location: $it")
 
+                }
+            }
     }
 }
