@@ -57,9 +57,15 @@ class BufferActivity: AppCompatActivity() {
                     dialogBox.dialogButtonSave.setOnClickListener {
                          mAlertDialog.dismiss()
                         val name = dialogBox.dialogBuildName.text.toString()
+                        val category = dialogBox.dialogCategory.text.toString()
+                        val price: Double = 0.0
 
                         // Save the build name as a document in a Build collection
-                        val user = mutableMapOf( "name" to name )
+                        val user = mutableMapOf(
+                            "name" to name,
+                            "category" to category,
+                            "price" to price
+                        )
                         db.collection("Build")
                             .add(user)
                             .addOnSuccessListener { documentReference ->

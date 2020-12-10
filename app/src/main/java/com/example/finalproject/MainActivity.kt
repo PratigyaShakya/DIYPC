@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
 // For returning users to get to Buffer page instead of having to login again
         if (auth.currentUser != null) {
-            val intent = Intent(this, ListPartsBuilder::class.java)
+            val intent = Intent(this, BufferActivity::class.java)
             startActivity(intent)
         }
 

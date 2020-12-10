@@ -36,7 +36,8 @@
         <activity android:name=".MotherboardActivity"
             android:label="Pick Motherboard"/>
 
-        <activity android:name=".MotherboardDetailedActivity"/>
+        <activity android:name=".MotherboardDetailedActivity"
+            android:label="Motherboard Detail"/>
         <activity android:name=".CaseActivity"/>
 
     </application>

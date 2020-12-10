@@ -1,6 +1,7 @@
 package com.example.finalproject.Controller
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.finalproject.*
@@ -19,12 +20,12 @@ class BufferAdapter(options: FirestoreRecyclerOptions<BufferModelActivity>, priv
 
     override fun onBindViewHolder(holder: BufferViewHolder, position: Int, model: BufferModelActivity) {
         // Fires when the user clicks the row in recycler view
-      /* holder.itemView.setOnClickListener {
+        holder.itemView.setOnClickListener {
             val intent = Intent(context, BufferActivity::class.java).apply {
                 putExtra("Build Show Page", model)
             }
             context.startActivity(intent)
-        }*/
+        }
         holder.name.text = model.name
 
     }
