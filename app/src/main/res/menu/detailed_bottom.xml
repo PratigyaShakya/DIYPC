@@ -3,12 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/copyBuild"
+        android:id="@+id/buyAmazon"
         android:icon="@drawable/add"
         android:title="Buy from Amazon"
         android:onClick="toBrowser"/>
 
-    <item android:id="@+id/newBuild"
+    <item android:id="@+id/addBuild"
         android:icon="@drawable/add"
         android:title="Add to build"
         android:onClick="toBuild"/>

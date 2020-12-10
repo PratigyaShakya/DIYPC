@@ -5,12 +5,15 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalproject.glide.GlideApp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import kotlinx.android.synthetic.main.activity_buffer.*
 import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
+import kotlinx.android.synthetic.main.activity_detailed_view_motherboard.*
 
 
 class CPUDetailActivity : AppCompatActivity() {
@@ -38,7 +41,14 @@ class CPUDetailActivity : AppCompatActivity() {
         GlideApp.with(this).load(storageReference).into(ImageDetailed)
 
         //detail: String = cpuNameDetailed.toString()
-
+        bottomNavigationBufferCPU.selectedItemId = R.id.addBuild
+        bottomNavigationBufferCPU.setOnNavigationItemReselectedListener {
+            when(it.itemId) {
+                R.id.addBuild ->{
+                    Toast.makeText(this, "Added to build", Toast.LENGTH_SHORT)
+                }
+            }
+        }
 
     }
 

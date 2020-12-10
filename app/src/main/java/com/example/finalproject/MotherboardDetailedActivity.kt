@@ -1,10 +1,12 @@
 package com.example.finalproject
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalproject.glide.GlideApp
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import kotlinx.android.synthetic.main.activity_buffer.*
 import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
 import kotlinx.android.synthetic.main.activity_detailed_view_motherboard.*
 
@@ -29,5 +31,13 @@ class MotherboardDetailedActivity  : AppCompatActivity() {
         val storageReference = Firebase.storage.getReferenceFromUrl(motherboardDetail.image)
         GlideApp.with(this).load(storageReference).into(motherboardImageDetailed)
 
+        bottomNavigationBufferMobo.selectedItemId = R.id.addBuild
+        bottomNavigationBuffer.setOnNavigationItemReselectedListener {
+            when(it.itemId) {
+                R.id.addBuild ->{
+                    Toast.makeText(this, "Added to build", Toast.LENGTH_SHORT)
+                }
+            }
+        }
     }
 }
