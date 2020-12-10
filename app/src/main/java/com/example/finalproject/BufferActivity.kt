@@ -36,11 +36,8 @@ class BufferActivity: AppCompatActivity() {
             .setQuery(query, BufferModelActivity::class.java)
             .build()
 
-        //showEditTextDialog()
         bufferAdapter = BufferAdapter(options, this)
         recyclerViewBuffer.adapter = bufferAdapter
-        recyclerViewBuffer.layoutManager = LinearLayoutManager(this)
-
         // Setting selected item on the bar explicitly
         bottomNavigationBuffer.selectedItemId = R.id.newBuild
 
@@ -75,12 +72,18 @@ class BufferActivity: AppCompatActivity() {
                             Log.w(TAG, "Error adding document", e)
                              }
                     }
-
+                    // Cancel button click
+                    dialogBox.dialogButtonCancel.setOnClickListener {
+                        mAlertDialog.dismiss()
+                    }
                 }
-                //R.id.copyBuild
+            }
+            when(it.itemId){
+                R.id.copyBuild-> {
+                    recyclerViewBuffer.layoutManager = LinearLayoutManager(this)
+                }
             }
         }
-
     }
 
     override fun onStart(){
