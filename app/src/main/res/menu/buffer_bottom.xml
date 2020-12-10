@@ -3,8 +3,8 @@
     <item
         android:id="@+id/copyBuild"
         android:icon="@drawable/add"
-        android:title="Copy Build" />
-
+        android:title="Copy Build"
+        />
     <item android:id="@+id/newBuild"
         android:icon="@drawable/add"
         android:title="New Build" />

@@ -3,42 +3,43 @@ package com.example.finalproject
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.finalproject.Controller.CaseAdapter
 import com.example.finalproject.Controller.MotherboardAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.activity_builder.*
 
-class MotherboardActivity: AppCompatActivity() {
+class CaseActivity: AppCompatActivity() {
 
     private val TAG = javaClass.name
     private val db = FirebaseFirestore.getInstance()
-    private lateinit var motherboardAdapter: MotherboardAdapter
+    private lateinit var caseAdapter: CaseAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_builder)
 
         val query: Query = FirebaseFirestore.getInstance()
-            .collection("Motherboard")
+            .collection("Case")
             .orderBy("name")
             .limit(50)
 
         // query.addSnapshotListener
-        val options: FirestoreRecyclerOptions<MotherboardList> = FirestoreRecyclerOptions.Builder<MotherboardList>()
-            .setQuery(query, MotherboardList::class.java)
+        val options: FirestoreRecyclerOptions<CaseList> = FirestoreRecyclerOptions.Builder<CaseList>()
+            .setQuery(query, CaseList::class.java)
             .build()
 
-        motherboardAdapter = MotherboardAdapter(options, this)
-        recyclerView.adapter = motherboardAdapter
+        caseAdapter = CaseAdapter(options, this)
+        recyclerView.adapter = caseAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
     override fun onStart(){
         super.onStart()
-        motherboardAdapter.startListening()
+        caseAdapter.startListening()
     }
     override fun onStop(){
         super.onStop()
-        motherboardAdapter.stopListening()
+        caseAdapter.stopListening()
     }
 }

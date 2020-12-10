@@ -24,6 +24,7 @@
         <activity android:name=".BufferActivity"/>
         <activity android:name=".MotherboardActivity"/>
         <activity android:name=".MotherboardDetailedActivity"/>
+        <activity android:name=".CaseActivity"/>
 
     </application>
 </manifest>
