@@ -11,6 +11,10 @@ class ListPartsBuilder: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_part_builder)
 
+        tv_desktopCase.setOnClickListener {
+            val intent = Intent(this, CaseActivity::class.java)
+            startActivity(intent)
+        }
         buttonMotherboard.setOnClickListener {
             val intent = Intent(this, MotherboardActivity::class.java)
             startActivity(intent)
@@ -19,6 +23,8 @@ class ListPartsBuilder: AppCompatActivity() {
             val intent = Intent(this, BuilderActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
     }

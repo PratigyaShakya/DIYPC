@@ -1,7 +1,6 @@
-package com.example.finalproject.Adapter
+package com.example.finalproject.Controller
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.finalproject.*
