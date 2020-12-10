@@ -9,20 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"
+            android:label="Register"/>
+
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".BuilderActivity"/>
-        <activity android:name=".ListPartsBuilder"/>
-        <activity android:name=".CPUDetailActivity"/>
-        <activity android:name=".BufferActivity"/>
-        <activity android:name=".MotherboardActivity"/>
+        <activity android:name=".LoginActivity"
+            android:label="Login"
+       />
+        <activity android:name=".BuilderActivity"
+            android:label="Pick CPU"/>
+
+        <activity android:name=".ListPartsBuilder"
+            android:label="Parts Collection"/>
+
+        <activity android:name=".CPUDetailActivity"
+            android:label="CPU Detail"/>
+
+        <activity android:name=".BufferActivity"
+            android:label="Builds"/>
+
+        <activity android:name=".MotherboardActivity"
+            android:label="Pick Motherboard"/>
+
         <activity android:name=".MotherboardDetailedActivity"/>
         <activity android:name=".CaseActivity"/>
 

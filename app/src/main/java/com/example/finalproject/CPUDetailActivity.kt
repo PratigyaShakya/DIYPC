@@ -22,8 +22,8 @@ class CPUDetailActivity : AppCompatActivity() {
         val cpuDetail = intent.getSerializableExtra("CPU Detail") as? ProductList ?: return
         cpuNameDetailed.text = cpuDetail.name
         cpuPriceDetailed.text = "$${cpuDetail.price}"
-        cpuBoostClockDetailed.text = "${cpuDetail.boostClock}GHz"
-        cpuCoreClockDetailed.text = "${cpuDetail.coreClock}GHz"
+        cpuBoostClockDetailed.text = cpuDetail.boostClock
+        cpuCoreClockDetailed.text = cpuDetail.coreClock
         cpuCoreCountDetailed.text = cpuDetail.coreCount
         cpuTDPDetailed.text = cpuDetail.tdp
 
