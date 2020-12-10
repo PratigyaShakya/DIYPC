@@ -6,7 +6,7 @@
     android:padding="10dp"
     android:orientation="vertical">
     <EditText
-        android:id="@+id/dialogName"
+        android:id="@+id/dialogBuildName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
         >
 
         <Button
