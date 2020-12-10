@@ -7,14 +7,16 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalproject.glide.GlideApp
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
 
 
 class CPUDetailActivity : AppCompatActivity() {
-
-    var term = ""
+    private val db = FirebaseFirestore.getInstance()
+    private var term = ""
+    private var cost = 0.0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed_view_cpu)
@@ -29,13 +31,11 @@ class CPUDetailActivity : AppCompatActivity() {
 
         //Get name for additional term to open URL.
         term = cpuDetail.name
-
+        cost = cpuDetail.price
 
         // binding logo using Glide generated API
         val storageReference= Firebase.storage.getReferenceFromUrl(cpuDetail.image)
         GlideApp.with(this).load(storageReference).into(ImageDetailed)
-
-
 
         //detail: String = cpuNameDetailed.toString()
 
@@ -48,5 +48,13 @@ class CPUDetailActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(baseURL)
         startActivity(intent)
+    }
+
+    //Add CPU to User Collection
+    fun toBuild(item: MenuItem) {
+        db.collection("CustBuild").document("CPU").set({
+            "name" to term
+            "price" to cost
+        });
     }
 }
