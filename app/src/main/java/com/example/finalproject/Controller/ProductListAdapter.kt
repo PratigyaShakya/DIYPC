@@ -1,7 +1,10 @@
 package com.example.finalproject.Controller
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.finalproject.CPUDetailActivity
@@ -14,7 +17,11 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
-class ProductListAdapter(options: FirestoreRecyclerOptions<ProductList>, private val context: Context) :
+
+class ProductListAdapter(
+    options: FirestoreRecyclerOptions<ProductList>,
+    private val context: Context
+) :
     FirestoreRecyclerAdapter<ProductList, ProductListViewHolder>(options) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductListViewHolder {

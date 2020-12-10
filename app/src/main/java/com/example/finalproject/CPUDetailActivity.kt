@@ -1,11 +1,16 @@
 package com.example.finalproject
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.finalproject.glide.GlideApp
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
+
 
 class CPUDetailActivity : AppCompatActivity() {
 
@@ -27,5 +32,14 @@ class CPUDetailActivity : AppCompatActivity() {
 
 
 
+        //detail: String = cpuNameDetailed.toString()
+
+
     }
+    fun toBrowser(item: MenuItem) {
+        val baseurl = "http://www.amazon.com/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(baseurl)
+        startActivity(intent)}
+
 }
