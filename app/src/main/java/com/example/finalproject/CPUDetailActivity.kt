@@ -36,10 +36,11 @@ class CPUDetailActivity : AppCompatActivity() {
 
 
     }
+    
     fun toBrowser(item: MenuItem) {
-        val baseurl = "http://www.amazon.com/"
+        val baseURL = "http://www.amazon.com/"
         val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(baseurl)
-        startActivity(intent)}
-
+        intent.data = Uri.parse(baseURL)
+        startActivity(intent)
+    }
 }
