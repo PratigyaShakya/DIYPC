@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
 
 class CPUDetailActivity : AppCompatActivity() {
 
+    var term = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed_view_cpu)
@@ -26,6 +27,10 @@ class CPUDetailActivity : AppCompatActivity() {
         cpuCoreCountDetailed.text = cpuDetail.coreCount
         cpuTDPDetailed.text = cpuDetail.tdp
 
+        //Get name for additional term to open URL.
+        term = cpuDetail.name
+
+
         // binding logo using Glide generated API
         val storageReference= Firebase.storage.getReferenceFromUrl(cpuDetail.image)
         GlideApp.with(this).load(storageReference).into(ImageDetailed)
@@ -36,9 +41,10 @@ class CPUDetailActivity : AppCompatActivity() {
 
 
     }
-    
+
+    //Open CPU search in Amazon
     fun toBrowser(item: MenuItem) {
-        val baseURL = "http://www.amazon.com/"
+        val baseURL = "https://www.amazon.com/s?k=$term"
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(baseURL)
         startActivity(intent)
