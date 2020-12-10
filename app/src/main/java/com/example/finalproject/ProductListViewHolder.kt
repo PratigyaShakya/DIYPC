@@ -9,6 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 class ProductListViewHolder(view: View) : RecyclerView.ViewHolder(view){
     var name: TextView = view.findViewById(R.id.cpuName)
     var price: TextView = view.findViewById(R.id.cpuPrice)
-    var cpuLogo: ImageView = view.findViewById(R.id.cpuImage)
+    var image: ImageView = view.findViewById(R.id.cpuImage)
 
 }

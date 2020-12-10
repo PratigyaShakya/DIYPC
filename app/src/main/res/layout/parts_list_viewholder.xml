@@ -9,7 +9,7 @@
         android:id="@+id/cpuName"
         android:layout_width="214dp"
         android:layout_height="28dp"
-        android:text="Name of the cpu"
+        android:text="Name of parts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.776"

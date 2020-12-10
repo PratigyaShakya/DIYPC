@@ -7,8 +7,6 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_detailed_view_cpu.*
 
-import kotlinx.android.synthetic.main.cpu_list_viewholder.*
-
 class CPUDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +22,7 @@ class CPUDetailActivity : AppCompatActivity() {
         cpuTDPDetailed.text = cpuDetail.tdp
 
         // binding logo using Glide generated API
-        val storageReference= Firebase.storage.getReferenceFromUrl(cpuDetail.cpuLogo)
+        val storageReference= Firebase.storage.getReferenceFromUrl(cpuDetail.image)
         GlideApp.with(this).load(storageReference).into(ImageDetailed)
 
 

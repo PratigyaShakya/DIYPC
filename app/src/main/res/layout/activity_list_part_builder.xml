@@ -77,32 +77,60 @@
         app:layout_constraintStart_toStartOf="@+id/tv_cpu"
         app:layout_constraintTop_toBottomOf="@+id/tv_cpu" />
 
-    <ImageView
-        android:id="@+id/psu"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="232dp"
-        app:layout_constraintEnd_toEndOf="@+id/cpu_logo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
-        app:layout_constraintTop_toBottomOf="@+id/cpu_logo"
-        android:src="@drawable/psu" />
-
     <Button
         android:id="@+id/tv_psu"
         android:layout_width="279dp"
         android:layout_height="101dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="228dp"
         android:text="PSU"
         android:textColor="@android:color/black"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tv_cpu"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cpu" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_cpu"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/psu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="228dp"
+        android:src="@drawable/psu"
+        app:layout_constraintEnd_toEndOf="@+id/cpu_logo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_logo" />
+
+    <Button
+        android:id="@+id/buttonMotherboard"
+        android:layout_width="279dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="124dp"
+        android:text="Motherboard"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_cpu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_psu" />
+
+    <ImageView
+        android:id="@+id/motherboard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMotherboard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cpu_logo"
+        app:layout_constraintTop_toBottomOf="@+id/cpu_logo"
+        app:layout_constraintVertical_bias="0.735"
+        app:srcCompat="@drawable/mobo" />
 
 
     />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

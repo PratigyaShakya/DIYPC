@@ -12,6 +12,8 @@ import com.google.firebase.ktx.Firebase
 import android.os.Handler
 import android.provider.MediaStore
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
@@ -21,83 +23,81 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+
+    private lateinit var userName: EditText
+    private lateinit var userEmail: EditText
+    private lateinit var userPassword: EditText
+    private lateinit var auth: FirebaseAuth
+    private lateinit var registerButton: Button
+
     private val TAG = javaClass.name
     private val db = FirebaseFirestore.getInstance()
     val email = null
     val password = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        registration_button.setOnClickListener setOnCLickListener@{
-            registrationFunction()
 
-        }
+        userName = findViewById(R.id.username_editText_register)
+        userEmail = findViewById(R.id.email_editText_register)
+        userPassword = findViewById(R.id.password_editText_register)
+        registerButton = findViewById(R.id.registration_button)
+        auth = FirebaseAuth.getInstance()
 
-        back_to_registration.setOnClickListener{
-            Log.d("MainActivity", "Trying to show login activity")
-            // Launch the login activity
-            val intent = Intent(this, LoginActivity::class.java)
+// For returning users to get to Buffer page instead of having to login again
+        if (auth.currentUser != null) {
+            val intent = Intent(this, BufferActivity::class.java)
             startActivity(intent)
         }
 
-        select_photo.setOnClickListener {
-            Log.d("Main", "Trying to show photo selector")
 
-            val intent = Intent(Intent.ACTION_PICK)
-            intent.type ="image/*"
-            startActivityForResult(intent, 0)
-        }
-    }
+// On click action that will let the user provide user name, email and password to register
+        registerButton.setOnClickListener {
+            val userName: String = username_editText_register.text.toString()
+            val email: String = email_editText_register.text.toString()
+            val password = password_editText_register.text.toString()
 
-    var selectedPhotoUri: Uri? = null
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode==0 && resultCode == Activity.RESULT_OK&& data!= null){
-            Log.d("RegisterActivity", "Photo was selected")
-            selectedPhotoUri = data.data
-            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
-            val bitmapDrawable = BitmapDrawable(bitmap)
-            select_photo.setBackgroundDrawable(bitmapDrawable)
-        }
-    }
-
-    private fun registrationFunction(){
-        val email = email_editText_register.text.toString()
-        val password = password_editText_register.text.toString()
-
-        if(email.isEmpty() || password.isEmpty()){
-            Toast.makeText(this, "Please enter your email and password", Toast.LENGTH_SHORT).show()
-            return
-        }
-
-        Log.d("MainActivity", "Email is : " + email)
-        Log.d("MainActivity", "Password: $password")
-
-        // Firebase authentication, user email and password
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener{
-                if (!it.isSuccessful) return@addOnCompleteListener
-                Log.d("Main", "Successfully created user with uid: ${it.result?.user?.uid}")
-                uploadImageToFirebaseStorage()
+            if (userName.isEmpty() || email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Please enter your email and password.", Toast.LENGTH_SHORT)
+                    .show()
+                return@setOnClickListener
+            } else {
+                auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            addToUserCollection()
+                            val intent = Intent(this, LoginActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(
+                                this,
+                                "Error Message: " + task.exception!!.message.toString(),
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                    }
             }
-            .addOnFailureListener{
-                Log.d("Main", "Failed to create user: ${it.message}")
-                Toast.makeText(this, "Registration failed :  ${it.message}", Toast.LENGTH_SHORT).show()
-            }
+        }
     }
-    private fun uploadImageToFirebaseStorage(){
-        if (selectedPhotoUri == null) return
-        val filename = UUID.randomUUID().toString()
-        val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
-        ref.putFile(selectedPhotoUri!!)
-            .addOnSuccessListener {
-                Log.d("registerActivity", "Successfully uploaded image${it.metadata?.path}")
-                ref.downloadUrl.addOnSuccessListener {
-                    Log.d("Registration URL", "file location: $it")
 
-                }
+    // Adding user data to FireStore
+    private fun addToUserCollection() {
+        val user = mutableMapOf(
+            "userName" to userName.text.toString(),
+            "userEmail" to userEmail.text.toString()
+        )
+        db.collection("Users")
+            .add(user)
+            .addOnSuccessListener { documentReference ->
+                Log.d(
+                    TAG,
+                    "DocumentSnapshot written with ID: ${documentReference.id}"
+                )
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
             }
     }
 }

@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/ImageDetailed"
+        android:id="@+id/motherboardImageDetailed"
         android:layout_width="412dp"
         android:layout_height="285dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,134 +16,161 @@
         tools:srcCompat="@tools:sample/avatars[0]" />
 
     <TextView
-        android:id="@+id/cpuNameDetailed"
+        android:id="@+id/motherboardNameDetailed"
         android:layout_width="378dp"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
-        android:text="CPU Name"
+        android:text="Motherboard Name"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ImageDetailed"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardImageDetailed"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImageDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardImageDetailed"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/cpuPriceDetailed"
+        android:id="@+id/motherboardPriceDetailed"
         android:layout_width="89dp"
         android:layout_height="41dp"
         android:layout_marginBottom="312dp"
-        android:text="$1234"
+        android:text="$Price"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cpuNameDetailed"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardNameDetailed"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cpuNameDetailed"
-        app:layout_constraintTop_toBottomOf="@+id/cpuNameDetailed" />
+        app:layout_constraintStart_toStartOf="@+id/motherboardNameDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardNameDetailed" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        android:text="Boost Clock: "
+        android:text="Form factor "
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/cpuNameDetailed"
-        app:layout_constraintTop_toBottomOf="@+id/cpuNameDetailed"
+        app:layout_constraintStart_toStartOf="@+id/motherboardNameDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardNameDetailed"
         app:layout_constraintVertical_bias="0.007" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Core Clock"
+        android:text="Manufacturer"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cpuCoreClockDetailed"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
-        android:id="@+id/cpuCoreClockDetailed"
+        android:id="@+id/motherboardformFactorDetailed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cpuBoostClockDetailed"
-        app:layout_constraintTop_toBottomOf="@+id/cpuBoostClockDetailed"
-        app:layout_constraintVertical_bias="0.028" />
-
-    <TextView
-        android:id="@+id/cpuBoostClockDetailed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cpuNameDetailed"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardNameDetailed"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/cpuNameDetailed"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintTop_toBottomOf="@+id/motherboardNameDetailed"
+        app:layout_constraintVertical_bias="0.241" />
 
     <TextView
-        android:id="@+id/cpuCoreCountDetailed"
+        android:id="@+id/motherboardSocketTypeDetailed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardRamTypeDetailed"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cpuCoreClockDetailed"
-        app:layout_constraintTop_toBottomOf="@+id/cpuCoreClockDetailed"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintStart_toStartOf="@+id/motherboardRamTypeDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardRamTypeDetailed"
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
-        android:id="@+id/cpuTDPDetailed"
-        android:layout_width="74dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="148dp"
+        android:id="@+id/motherboardRamTypeDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="TextView"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardRamChannelsDetailed"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/cpuCoreCountDetailed" />
+        app:layout_constraintStart_toStartOf="@+id/motherboardRamChannelsDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardRamChannelsDetailed"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/motherboardManufacturerDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardformFactorDetailed"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardformFactorDetailed"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/motherboardRamChannelsDetailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/motherboardManufacturerDetailed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/motherboardManufacturerDetailed"
+        app:layout_constraintTop_toBottomOf="@+id/motherboardManufacturerDetailed"
+        app:layout_constraintVertical_bias="0.044" />
+
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Core Count"
+        android:text="Ram channels"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cpuCoreCountDetailed"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.026" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="33dp"
-        android:layout_height="18dp"
-        android:text="TDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socket Type"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cpuTDPDetailed"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ram type"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.062" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationBuffer"
@@ -159,9 +185,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/motherboardImageDetailed"
         app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/detailed_bottom" />
+        app:menu="@menu/detailed_bottom"
+        tools:ignore="MissingConstraints">
 
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
