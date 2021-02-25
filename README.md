@@ -1,0 +1,5 @@
+# DIYPC
+DIY PC is an android application that draws inspiration from PCPartPicker.com browser application. 
+It helps users build computers by acting as a digital checklist with a library of parts from which to choose. Users can also see builds submitted by other users and get information about parts’ specifications and prices in a concise format. User can choose to view a list of available parts and their specifications in detail. The app also makes parts easy to buy by linking users from a part’s description to a sales page in the browser. 
+We have focused on few components such as CPU, PSU, Motherboard, Case, GPU, and Memory without consideration for peripherals and other external accessories. 
+We would have liked to add features for the users to add reviews and ratings on builds published publicly to add to a social aspect of our application and camera integration to get the picture to post builds and push notifications to notify users in case of price drop on the parts in their build list.
